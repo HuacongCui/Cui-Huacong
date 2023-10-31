@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class task1 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("give start number");
+        int start = input.nextInt();
+        System.out.print("give end number");
+        int end = input.nextInt();
+        int sum = 0;
+        for (int i = start; i <= end; i++) {
+            sum+=i;
+        }
+        System.out.println("The sum of integers from " + start + " to " + end + " is: " + sum);
+        input.close();
+    }
+}
